@@ -1,0 +1,393 @@
+export const CATEGORIES = [
+    'All',
+    'Fiction',
+    'Non-Fiction',
+    'Technology',
+    'Science',
+    'History',
+    'Philosophy',
+    'Poetry',
+    'Children',
+    'Education'
+];
+export const BOOKS_PER_PAGE = 4;
+export const MOCK_BOOKS = [
+    {
+        id: '1',
+        title: 'Echoes of Eternity',
+        author: 'Elena Vance',
+        price: 24.99,
+        oldPrice: 34.99,
+        discountPercentage: 28,
+        description: 'A sweeping saga of time travel and the enduring power of human connection across centuries.',
+        category: 'Fiction',
+        coverImage: 'https://picsum.photos/seed/book1/400/600',
+        rating: 4.8,
+        isNew: true,
+        trailerThumb: 'https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&q=80&w=800'
+    },
+    {
+        id: '2',
+        title: 'The Neural Frontier',
+        author: 'Dr. Marcus Thorne',
+        price: 32.50,
+        description: 'An exploration of the upcoming revolution in brain-computer interfaces and the future of consciousness.',
+        category: 'Technology',
+        coverImage: 'https://picsum.photos/seed/book2/400/600',
+        rating: 4.9,
+        trailerThumb: 'https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=800'
+    },
+    {
+        id: '3',
+        title: 'Silent Whispers of History',
+        author: 'Sarah Jenkins',
+        price: 18.00,
+        oldPrice: 25.00,
+        discountPercentage: 28,
+        description: 'Uncovering the untold stories of the women who shaped the industrial revolution from behind the scenes.',
+        category: 'History',
+        coverImage: 'https://picsum.photos/seed/book3/400/600',
+        rating: 4.5
+    },
+    {
+        id: '4',
+        title: 'Algorithm of Desire',
+        author: 'Leo Cassel',
+        price: 21.99,
+        description: 'A gripping thriller about a programmer who discovers an algorithm that can predict human love.',
+        category: 'Fiction',
+        coverImage: 'https://picsum.photos/seed/book4/400/600',
+        rating: 4.2
+    },
+    {
+        id: '5',
+        title: 'The Quantum Mind',
+        author: 'Aria Sterling',
+        price: 29.99,
+        description: 'Bridging the gap between physics and philosophy to understand the nature of reality.',
+        category: 'Science',
+        coverImage: 'https://picsum.photos/seed/book5/400/600',
+        rating: 4.7,
+        trailerThumb: 'https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80&w=800'
+    },
+    {
+        id: '6',
+        title: 'Starlight Sonnets',
+        author: 'Julian Frost',
+        price: 15.50,
+        description: 'A collection of contemporary poems inspired by the mysteries of deep space.',
+        category: 'Poetry',
+        coverImage: 'https://picsum.photos/seed/book6/400/600',
+        rating: 4.6,
+        isNew: true
+    },
+    {
+        id: '7',
+        title: 'Ancient Logic',
+        author: 'Sofia Rossi',
+        price: 26.00,
+        oldPrice: 32.00,
+        discountPercentage: 18,
+        description: 'How the Stoics and Epicureans can help us navigate the digital anxieties of the 21st century.',
+        category: 'Philosophy',
+        coverImage: 'https://picsum.photos/seed/book7/400/600',
+        rating: 4.9
+    },
+    {
+        id: '8',
+        title: 'Cybernetics & Society',
+        author: 'Kevin Wu',
+        price: 35.00,
+        description: 'A comprehensive look at how automation is rewriting the social contract.',
+        category: 'Technology',
+        coverImage: 'https://picsum.photos/seed/book8/400/600',
+        rating: 4.4
+    },
+    {
+        id: '9',
+        title: 'The Weaver of Dreams',
+        author: 'Cassandra Blake',
+        price: 22.95,
+        description: 'In a world where dreams can be harvested, one young woman must protect the last sanctuary of imagination.',
+        category: 'Fiction',
+        coverImage: 'https://picsum.photos/seed/book9/400/600',
+        rating: 4.7
+    },
+    {
+        id: '10',
+        title: 'Ethical Silicon',
+        author: 'Jameson Park',
+        price: 39.99,
+        description: 'A critical analysis of AI ethics in the age of generative models and autonomous systems.',
+        category: 'Technology',
+        coverImage: 'https://picsum.photos/seed/book10/400/600',
+        rating: 4.8
+    },
+    {
+        id: '11',
+        title: 'Beyond the Horizon',
+        author: 'Marcus Aurelius II',
+        price: 19.99,
+        oldPrice: 29.99,
+        discountPercentage: 33,
+        description: 'Letters from the edge of space exploration and what it means for the future of humanity.',
+        category: 'Philosophy',
+        coverImage: 'https://picsum.photos/seed/book11/400/600',
+        rating: 4.3
+    },
+    {
+        id: '12',
+        title: 'Petals of the Past',
+        author: 'Lily Chen',
+        price: 16.50,
+        description: 'A floral-inspired journey through historical botanicals and their medicinal secrets.',
+        category: 'History',
+        coverImage: 'https://picsum.photos/seed/book12/400/600',
+        rating: 4.6
+    },
+    {
+        id: '13',
+        title: 'The Clockwork City',
+        author: 'Victor H. Sterling',
+        price: 27.50,
+        oldPrice: 35.00,
+        discountPercentage: 21,
+        description: 'Steampunk adventure meets political intrigue in a city built on gears and secrets.',
+        category: 'Fiction',
+        coverImage: 'https://picsum.photos/seed/book13/400/600',
+        rating: 4.4,
+        isNew: true
+    },
+    {
+        id: '14',
+        title: 'Nebula Fragments',
+        author: 'Kaelen Thorne',
+        price: 14.99,
+        description: 'Ethereal poetry reflecting on the cosmic loneliness of space.',
+        category: 'Poetry',
+        coverImage: 'https://picsum.photos/seed/book14/400/600',
+        rating: 4.8
+    },
+    {
+        id: '15',
+        title: 'The Silicon Soul',
+        author: 'Dr. Evelyn Hayes',
+        price: 33.00,
+        description: 'Can machines truly feel? A deep dive into the psychological modeling of AI.',
+        category: 'Technology',
+        coverImage: 'https://picsum.photos/seed/book15/400/600',
+        rating: 4.7
+    },
+    {
+        id: '16',
+        title: 'Rhythms of Gaia',
+        author: 'Samuel Rivers',
+        price: 21.00,
+        description: 'How ecology and economy must merge to save the 22nd century.',
+        category: 'Science',
+        coverImage: 'https://picsum.photos/seed/book16/400/600',
+        rating: 4.5,
+        isNew: true
+    },
+    {
+        id: '17',
+        title: 'The Adventures of Barnaby Bear',
+        author: 'Clara M. Woods',
+        price: 12.99,
+        oldPrice: 19.99,
+        discountPercentage: 35,
+        description: 'A heartwarming tale for children about a bear who discovers the magic of friendship in the Great North.',
+        category: 'Children',
+        coverImage: 'https://picsum.photos/seed/bear/400/600',
+        rating: 4.9,
+        isNew: true
+    },
+    {
+        id: '18',
+        title: 'Learning Through Play',
+        author: 'Prof. Simon Kent',
+        price: 28.50,
+        description: 'An essential guide for modern educators on integrating interactive play into early childhood curriculums.',
+        category: 'Education',
+        coverImage: 'https://picsum.photos/seed/edu1/400/600',
+        rating: 4.7
+    },
+    {
+        id: '19',
+        title: 'The Secret Kingdom',
+        author: 'A.J. Fairweather',
+        price: 14.50,
+        description: 'A beautifully illustrated fantasy novel for middle-grade readers about a hidden city beneath the park.',
+        category: 'Children',
+        coverImage: 'https://picsum.photos/seed/kingdom/400/600',
+        rating: 4.6
+    },
+    {
+        id: '20',
+        title: 'Critical Thinking in the AI Era',
+        author: 'Dr. Linus Vance',
+        price: 34.00,
+        description: 'How to redesign our educational systems to prepare students for a future defined by machine intelligence.',
+        category: 'Education',
+        coverImage: 'https://picsum.photos/seed/think/400/600',
+        rating: 4.8,
+        isNew: true
+    },
+    {
+        id: '21',
+        title: 'The Origin of Stars',
+        author: 'Prof. Elena Vance',
+        price: 25.00,
+        oldPrice: 45.00,
+        discountPercentage: 44,
+        description: 'A scientific masterwork explaining the lifecycle of celestial bodies.',
+        category: 'Science',
+        coverImage: 'https://picsum.photos/seed/stars/400/600',
+        rating: 5.0
+    },
+    {
+        id: '22',
+        title: 'Legacy of the Lost',
+        author: 'Sarah Jenkins',
+        price: 12.00,
+        oldPrice: 24.00,
+        discountPercentage: 50,
+        description: 'A discounted gem uncovering ancient civilizations lost to time.',
+        category: 'History',
+        coverImage: 'https://picsum.photos/seed/lost/400/600',
+        rating: 4.1
+    },
+    {
+        id: '23',
+        title: 'The Last Code',
+        author: 'Devon Lee',
+        price: 22.00,
+        description: 'A futuristic noir set in a world where data is the only currency left.',
+        category: 'Technology',
+        coverImage: 'https://picsum.photos/seed/tech3/400/600',
+        rating: 4.9,
+        isNew: true
+    },
+    {
+        id: '24',
+        title: 'Memoirs of Gaia',
+        author: 'Aria Sterling',
+        price: 19.50,
+        description: 'Personal reflections from the first human colony on Mars.',
+        category: 'Science',
+        coverImage: 'https://picsum.photos/seed/sci4/400/600',
+        rating: 4.8
+    },
+    {
+        id: '25',
+        title: 'Shadows of Rome',
+        author: 'Sofia Rossi',
+        price: 28.00,
+        description: 'A detailed account of the lesser-known political conspiracies of the Roman Empire.',
+        category: 'History',
+        coverImage: 'https://picsum.photos/seed/hist4/400/600',
+        rating: 4.7
+    },
+    {
+        id: '26',
+        title: 'The Existential Mirror',
+        author: 'Julian Frost',
+        price: 31.00,
+        description: 'Essays on the self in the age of digital mirrors and social media.',
+        category: 'Philosophy',
+        coverImage: 'https://picsum.photos/seed/phil4/400/600',
+        rating: 4.9
+    },
+    {
+        id: '27',
+        title: 'Whispers from the Woods',
+        author: 'Lily Chen',
+        price: 14.00,
+        description: 'A collection of poems celebrating the quiet resilience of nature.',
+        category: 'Poetry',
+        coverImage: 'https://picsum.photos/seed/poet3/400/600',
+        rating: 4.6
+    },
+    {
+        id: '28',
+        title: 'The Robot Who Read',
+        author: 'Clara M. Woods',
+        price: 15.99,
+        description: 'A delightful children\'s story about a small robot who discovers the library.',
+        category: 'Children',
+        coverImage: 'https://picsum.photos/seed/child4/400/600',
+        rating: 4.8
+    },
+    {
+        id: '29',
+        title: 'Future Classrooms',
+        author: 'Prof. Simon Kent',
+        price: 29.00,
+        description: 'Redesigning learning spaces for the next generation of global citizens.',
+        category: 'Education',
+        coverImage: 'https://picsum.photos/seed/edu4/400/600',
+        rating: 4.7
+    },
+    {
+        id: '30',
+        title: 'Zen in the Machine',
+        author: 'Aria Sterling',
+        price: 24.50,
+        oldPrice: 30.00,
+        discountPercentage: 18,
+        description: 'Finding inner peace through mindfulness in a hyper-connected world.',
+        category: 'Philosophy',
+        coverImage: 'https://picsum.photos/seed/zen/400/600',
+        rating: 4.9
+    },
+    {
+        id: '31',
+        title: 'The Alchemist Path',
+        author: 'Leo Cassel',
+        price: 19.99,
+        description: 'A mystical journey through the secrets of medieval chemistry.',
+        category: 'Fiction',
+        coverImage: 'https://picsum.photos/seed/alch/400/600',
+        rating: 4.5
+    },
+    {
+        id: '32',
+        title: 'Digital Sovereignty',
+        author: 'Kevin Wu',
+        price: 45.00,
+        description: 'Why owning your data is the most important civil right of the century.',
+        category: 'Technology',
+        coverImage: 'https://picsum.photos/seed/sov/400/600',
+        rating: 4.8
+    },
+    {
+        id: '33',
+        title: 'Velvet Dreams',
+        author: 'Julian Frost',
+        price: 12.50,
+        description: 'Experimental poetry exploring the texture of subconscious thoughts.',
+        category: 'Poetry',
+        coverImage: 'https://picsum.photos/seed/velvet/400/600',
+        rating: 4.4
+    },
+    {
+        id: '34',
+        title: 'Gravity\'s Whisper',
+        author: 'Aria Sterling',
+        price: 34.99,
+        description: 'The untold story of the pioneers of gravitational wave research.',
+        category: 'Science',
+        coverImage: 'https://picsum.photos/seed/grav/400/600',
+        rating: 4.9
+    },
+    {
+        id: '35',
+        title: 'Broken Empire',
+        author: 'Sofia Rossi',
+        price: 26.50,
+        description: 'A definitive guide to the economic collapse of the late Byzantine period.',
+        category: 'History',
+        coverImage: 'https://picsum.photos/seed/broke/400/600',
+        rating: 4.7
+    }
+];
